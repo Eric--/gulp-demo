@@ -1,0 +1,85 @@
+ol, ul {
+    list-style: none;
+}
+.list {
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+/* Empty. Add your own CSS if you like */
+.list-slide{
+  /*position: absolute;*/
+  /*top:0;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  padding: 0;
+  height: 100%;
+  /*transition-duration: 1000ms;*/
+}
+.item-slide{
+  /*position: relative;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  /*display: none;*/
+  font-size: 80px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+html, body{
+  height: 100%;
+}
+.has-header {
+    top: 44px;
+}
+.content{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  left: 0;
+  overflow: hidden;
+}
+.item-slide:nth-child(odd){
+  /*background: red;*/
+}
+.item-slide:nth-child(even){
+  /*background: yellow;*/
+}
+.item-slide:nth-child(1){
+	background: rgb(255,128,0);
+}
+.item-slide:nth-child(2){
+	background: rgb(255,255,0);
+}
+.item-slide:nth-child(3){
+	background: rgb(0,255,0);
+}
+.item-slide:nth-child(4){
+	background: rgb(0,255,255);
+}
+.item-slide:nth-child(5){
+	background: rgb(0,0,255);
+}
+.item-slide.active{
+  display: list-item;
+}
+.item-slide.zindex{
+	z-index: 100;
+}
+.item-slide.transform{
+	  transition:transform 1000ms;
+}
+.item{
+  margin: 0;
+  border: 0;
+}
+.list:last-child {
+    margin-bottom: 0px;
+}
